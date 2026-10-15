@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "dockerfileLines": [
+    "FROM nginx:alpine",
+    "WORKDIR /usr/share/nginx/html",
+    "COPY . .",
+    "RUN rm -f captain-definition README.md .gitignore"
+  ]
+}
